@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Projects = () => {
+  const [activeImage, setActiveImage] = useState(null);
+
   const businessProjects = [
     {
       image: "/loom.png",
@@ -29,7 +31,10 @@ const Projects = () => {
           <div className="grid grid-cols-1 gap-8">
             {businessProjects.map((proj, idx) => (
               <div key={idx} className="bg-gradient-to-br from-surface to-primary/5 rounded-2xl overflow-hidden hover-card reveal-on-scroll flex flex-col md:flex-row max-w-4xl mx-auto ring-1 ring-primary/20 hover:ring-2 hover:ring-primary/40 transition-all shadow-xl hover:shadow-2xl shadow-primary/5 hover:shadow-primary/10" style={{ transitionDelay: `${idx * 0.1}s` }}>
-                <div className="w-full md:w-2/5 overflow-hidden border-r border-outline-variant/30 relative bg-surface-variant">
+                <div
+                  className="w-full md:w-2/5 overflow-hidden border-r border-outline-variant/30 relative bg-surface-variant cursor-pointer"
+                  onClick={() => setActiveImage(proj.image)}
+                >
                   <img
                     alt={proj.title}
                     className="w-full h-full object-cover aspect-video md:aspect-[4/3] hover:scale-105 transition-transform duration-500"
@@ -74,17 +79,23 @@ const Projects = () => {
                 <p className="text-on-surface-variant text-sm font-label-md">Organizing Committee & OutSite Leader</p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-                <div className="md:col-span-4 aspect-[3/4] overflow-hidden rounded-lg hover-card">
+                <div
+                  className="md:col-span-4 aspect-[3/4] overflow-hidden rounded-lg hover-card cursor-pointer"
+                  onClick={() => setActiveImage("/ftufashionshowrieng.jpg")}
+                >
                   <img
                     alt="FTU Fashion Show Highlights"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     src="/ftufashionshowrieng.jpg"
                   />
                 </div>
-                <div className="md:col-span-8 aspect-[16/9] md:aspect-auto overflow-hidden rounded-lg hover-card">
+                <div
+                  className="md:col-span-8 aspect-[16/9] md:aspect-auto overflow-hidden rounded-lg hover-card cursor-pointer"
+                  onClick={() => setActiveImage("/ftufashionshow.jpg")}
+                >
                   <img
                     alt="FTU Fashion Show Catwalk"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     src="/ftufashionshow.jpg"
                   />
                 </div>
@@ -98,17 +109,23 @@ const Projects = () => {
                 <p className="text-on-surface-variant text-sm font-label-md">Head Organizer</p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-                <div className="md:col-span-8 aspect-[16/9] md:aspect-auto overflow-hidden rounded-lg hover-card order-2 md:order-1">
+                <div
+                  className="md:col-span-8 aspect-[16/9] md:aspect-auto overflow-hidden rounded-lg hover-card order-2 md:order-1 cursor-pointer"
+                  onClick={() => setActiveImage("/mcfire.jpg")}
+                >
                   <img
                     alt="MC FIRE Stage"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     src="/mcfire.jpg"
                   />
                 </div>
-                <div className="md:col-span-4 aspect-[3/4] overflow-hidden rounded-lg hover-card order-1 md:order-2">
+                <div
+                  className="md:col-span-4 aspect-[3/4] overflow-hidden rounded-lg hover-card order-1 md:order-2 cursor-pointer"
+                  onClick={() => setActiveImage("/mcfirerieng.jpg")}
+                >
                   <img
                     alt="MC FIRE Head Organizer"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     src="/mcfirerieng.jpg"
                   />
                 </div>
@@ -122,17 +139,23 @@ const Projects = () => {
                 <p className="text-on-surface-variant text-sm font-label-md">Head of Content</p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-                <div className="md:col-span-4 aspect-[3/4] overflow-hidden rounded-lg hover-card">
+                <div
+                  className="md:col-span-4 aspect-[3/4] overflow-hidden rounded-lg hover-card cursor-pointer"
+                  onClick={() => setActiveImage("/dahoingarieng.jpg")}
+                >
                   <img
                     alt="Russian Gala Portrait"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     src="/dahoingarieng.jpg"
                   />
                 </div>
-                <div className="md:col-span-8 aspect-[16/9] md:aspect-auto overflow-hidden rounded-lg hover-card">
+                <div
+                  className="md:col-span-8 aspect-[16/9] md:aspect-auto overflow-hidden rounded-lg hover-card cursor-pointer"
+                  onClick={() => setActiveImage("/dahoinga.jpg")}
+                >
                   <img
                     alt="Russian Gala Stage Performance"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     src="/dahoinga.jpg"
                   />
                 </div>
@@ -141,6 +164,29 @@ const Projects = () => {
           </div>
         </div>
       </div>
+
+      {/* Lightbox Modal */}
+      {activeImage && (
+        <div
+          className="fixed inset-0 bg-black/90 backdrop-blur-md z-50 flex items-center justify-center p-4 cursor-zoom-out transition-all duration-300 animate-fade-in"
+          onClick={() => setActiveImage(null)}
+        >
+          <button
+            className="absolute top-6 right-6 text-white hover:text-primary transition-colors bg-white/10 hover:bg-white/20 p-2.5 rounded-full flex items-center justify-center"
+            onClick={() => setActiveImage(null)}
+          >
+            <span className="material-symbols-outlined text-2xl font-bold">close</span>
+          </button>
+          <div className="max-w-5xl max-h-[85vh] overflow-hidden rounded-2xl shadow-2xl relative transition-all duration-300 scale-100">
+            <img
+              src={activeImage}
+              alt="Zoomed Project Highlight"
+              className="max-w-full max-h-[85vh] object-contain rounded-2xl border border-white/10"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 };

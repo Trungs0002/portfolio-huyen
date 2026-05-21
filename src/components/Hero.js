@@ -1,6 +1,7 @@
-import React, { useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 const Hero = () => {
+  const [activeImage, setActiveImage] = useState(null);
   const shape1Ref = useRef(null);
   const shape2Ref = useRef(null);
 
@@ -99,11 +100,14 @@ const Hero = () => {
 
         {/* Right Portrait */}
         <div className="md:col-span-5 relative reveal-on-scroll" style={{ transitionDelay: "0.2s" }}>
-          <div className="relative w-full aspect-[4/5] rounded-t-full rounded-b-lg overflow-hidden glass-panel border border-surface/50 p-2 hover-card">
+          <div
+            className="relative w-full aspect-[4/5] rounded-t-full rounded-b-lg overflow-hidden glass-panel border border-surface/50 p-2 hover-card cursor-pointer"
+            onClick={() => setActiveImage("/avatar.jpg")}
+          >
             <div className="w-full h-full rounded-t-full rounded-b-sm overflow-hidden bg-surface-variant relative">
               <img
                 alt="NGUYEN NGOC KHANH HUYEN Portrait"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 src="/avatar.jpg"
               />
             </div>
@@ -125,6 +129,29 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
+      {/* Lightbox Modal */}
+      {activeImage && (
+        <div
+          className="fixed inset-0 bg-black/90 backdrop-blur-md z-50 flex items-center justify-center p-4 cursor-zoom-out transition-all duration-300 animate-fade-in"
+          onClick={() => setActiveImage(null)}
+        >
+          <button
+            className="absolute top-6 right-6 text-white hover:text-primary transition-colors bg-white/10 hover:bg-white/20 p-2.5 rounded-full flex items-center justify-center"
+            onClick={() => setActiveImage(null)}
+          >
+            <span className="material-symbols-outlined text-2xl font-bold">close</span>
+          </button>
+          <div className="max-w-5xl max-h-[85vh] overflow-hidden rounded-2xl shadow-2xl relative transition-all duration-300 scale-100">
+            <img
+              src={activeImage}
+              alt="Zoomed Portrait"
+              className="max-w-full max-h-[85vh] object-contain rounded-2xl border border-white/10"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 };
