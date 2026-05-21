@@ -14,7 +14,7 @@ const CVDownload = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Download Full CV [PDF, Google Drive]
+          Download Full CV
         </a>
       </div>
     </section>
