@@ -104,7 +104,17 @@ const Experience = () => {
                   <p className="text-primary font-label-md mb-2">
                     {exp.company} | {exp.duration}
                   </p>
-                  <p className="text-on-surface-variant font-body-md leading-relaxed">{exp.description}</p>
+                  <div className="text-on-surface-variant font-body-md leading-relaxed space-y-1">
+                    {exp.description.split('.').map((sentence, sIdx) => {
+                      const trimmed = sentence.trim();
+                      if (!trimmed) return null;
+                      return (
+                        <span key={sIdx} className="block">
+                          • {trimmed}.
+                        </span>
+                      );
+                    })}
+                  </div>
                 </div>
               ))}
             </div>
@@ -128,7 +138,17 @@ const Experience = () => {
                   <p className="text-primary font-label-md mb-2">
                     {edu.school} | {edu.duration}
                   </p>
-                  <p className="text-on-surface-variant font-body-md leading-relaxed mb-3">{edu.description}</p>
+                  <div className="text-on-surface-variant font-body-md leading-relaxed space-y-1 mb-3">
+                    {edu.description.split('.').map((sentence, sIdx) => {
+                      const trimmed = sentence.trim();
+                      if (!trimmed) return null;
+                      return (
+                        <span key={sIdx} className="block">
+                          • {trimmed}.
+                        </span>
+                      );
+                    })}
+                  </div>
                   {edu.gpa && (
                     <div className="inline-flex items-center gap-1.5 bg-primary/10 border border-primary/20 rounded px-2.5 py-1 text-primary font-label-md font-semibold">
                       <span className="material-symbols-outlined text-sm">stars</span>
