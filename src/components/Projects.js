@@ -7,7 +7,8 @@ const Projects = () => {
       title: "Loom Sustainable Startup Project",
       subtitle: "Top 15 I-Impact Competition 2026",
       desc: "Developed a sustainable development initiative that excelled in the prestigious social impact competition. Led business model refinement, social value framework, and structured partner Pitching strategies.",
-      linkText: "Explore Competition Details",
+      linkText: "Visit Loom Denim",
+      href: "https://loomdenim.vercel.app/",
     },
   ];
 
@@ -44,7 +45,12 @@ const Projects = () => {
                     <h4 className="font-headline-md text-2xl text-on-surface mb-3">{proj.title}</h4>
                     <p className="text-on-surface-variant text-sm mb-4 leading-relaxed">{proj.desc}</p>
                   </div>
-                  <a className="inline-flex items-center gap-2 bg-primary text-on-primary font-label-md text-label-md px-6 py-2.5 rounded-full hover:bg-primary/90 transition-colors shadow-md hover:shadow-lg mt-4 w-fit" href="#contact">
+                  <a
+                    className="inline-flex items-center gap-2 bg-primary text-on-primary font-label-md text-label-md px-6 py-2.5 rounded-full hover:bg-primary/90 transition-colors shadow-md hover:shadow-lg mt-4 w-fit"
+                    href={proj.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     {proj.linkText} <span className="material-symbols-outlined text-sm">arrow_forward</span>
                   </a>
                 </div>
