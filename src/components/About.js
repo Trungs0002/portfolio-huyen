@@ -20,7 +20,7 @@ const About = () => {
     {
       icon: "translate",
       title: "Languages",
-      desc: "English (IELTS 7.0) & Russian",
+      desc: "English: IELTS 7.0",
     },
   ];
 

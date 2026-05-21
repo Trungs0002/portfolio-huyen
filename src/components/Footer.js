@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto px-gutter gap-unit">
         <span className="font-headline-md text-primary text-headline-md font-headline-md">NNKH</span>
         <p className="font-body-md text-body-md text-primary">
-          © 2024 Nguyen Ngoc Khanh Huyen. All rights reserved.
+          © 2026 Nguyen Ngoc Khanh Huyen. All rights reserved.
         </p>
         <ul className="flex gap-4">
           {socials.map((soc, idx) => (

@@ -11,7 +11,7 @@ const Hero = () => {
       const { clientX, clientY } = e;
       const xOffset1 = (window.innerWidth / 2 - clientX) * 2 / 100;
       const yOffset1 = (window.innerHeight / 2 - clientY) * 2 / 100;
-      
+
       const xOffset2 = (window.innerWidth / 2 - clientX) * -3 / 100;
       const yOffset2 = (window.innerHeight / 2 - clientY) * -3 / 100;
 
@@ -66,7 +66,7 @@ const Hero = () => {
             </h1>
             <div className="w-16 h-1 bg-primary mb-6"></div>
             <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
-              Business Development Intern at LynkiD | President of MC and Fashion Club | Deputy Youth Union Secretary at Foreign Trade University | Co-founder of DIAS Fashion. Bridging the gap between corporate development and creative event operations.
+              Business Development Intern at LynkiD | President of MC and Fashion Club | Deputy Youth Union Secretary at Foreign Trade University | Co-founder of DIAS Fashion.
             </p>
           </div>
           <div className="flex flex-wrap gap-4 pt-4">
