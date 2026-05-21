@@ -32,10 +32,13 @@ const About = () => {
             <h2 className="font-headline-lg text-headline-lg text-primary mb-6">About Me</h2>
             <div className="w-16 h-1 bg-primary mb-6"></div>
             <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-6">
-              I am Nguyen Ngoc Khanh Huyen, a dedicated student of International Business Administration at Foreign Trade University (Hanoi) with a GPA of 3.57. My professional journey combines business development with a vibrant leadership presence in student organizations and large-scale event management.
+              I am Nguyen Ngoc Khanh Huyen, a Business Administration student at Foreign Trade University, with experience in event organization, program operations, and partner-related work. My working style is structured, planning-oriented, and focused on practical execution.
             </p>
             <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-6">
-              Currently acting as the President of the MC and Fashion Club (FTU) and the Deputy Youth Union Secretary, I thrive in managing cross-functional teams, planning comprehensive timelines, building active partner relations, and translating conceptual ideas into flawless event operations.
+              Through student clubs, competitions, and event projects, I have developed skills in planning, coordinating people, building program content, and managing implementation progress. I am currently expanding my experience in Business Development at LynkiD.
+            </p>
+            <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-6">
+              My career interests include Business Development, Partnership, Event Management, and Brand/Project Coordination.
             </p>
             {/* Quick Details Box */}
             <div className="bg-secondary-container/50 rounded-lg p-6 border border-primary/10 grid grid-cols-1 sm:grid-cols-3 gap-6 items-center">
@@ -46,10 +49,6 @@ const About = () => {
               <div>
                 <span className="text-xs text-primary font-bold uppercase tracking-wider block mb-1">Location</span>
                 <span className="text-on-surface font-body-md font-semibold">Hanoi, Vietnam</span>
-              </div>
-              <div className="bg-primary/10 rounded-lg p-3 border border-primary/20 flex flex-col justify-center items-center">
-                <span className="text-[10px] text-primary font-bold uppercase tracking-wider block text-center mb-0.5">Cumulative GPA</span>
-                <span className="text-primary font-headline-md text-xl font-bold">3.57 / 4.00</span>
               </div>
             </div>
           </div>
