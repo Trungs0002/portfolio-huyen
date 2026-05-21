@@ -24,10 +24,10 @@ const Projects = () => {
 
         {/* Business & Event Projects */}
         <div className="mb-20">
-          <h3 className="font-headline-md text-2xl text-on-surface mb-8">Featured Business Case</h3>
+          <h3 className="font-headline-md text-2xl text-on-surface mb-8">Brand & Business Projects</h3>
           <div className="grid grid-cols-1 gap-8">
             {businessProjects.map((proj, idx) => (
-              <div key={idx} className="bg-surface rounded-lg overflow-hidden hover-card reveal-on-scroll flex flex-col md:flex-row max-w-4xl mx-auto" style={{ transitionDelay: `${idx * 0.1}s` }}>
+              <div key={idx} className="bg-gradient-to-br from-surface to-primary/5 rounded-2xl overflow-hidden hover-card reveal-on-scroll flex flex-col md:flex-row max-w-4xl mx-auto ring-1 ring-primary/20 hover:ring-2 hover:ring-primary/40 transition-all shadow-xl hover:shadow-2xl shadow-primary/5 hover:shadow-primary/10" style={{ transitionDelay: `${idx * 0.1}s` }}>
                 <div className="w-full md:w-2/5 overflow-hidden border-r border-outline-variant/30 relative bg-surface-variant">
                   <img
                     alt={proj.title}
@@ -37,14 +37,14 @@ const Projects = () => {
                 </div>
                 <div className="p-8 flex-1 flex flex-col justify-between">
                   <div>
-                    <span className="inline-flex items-center gap-1.5 bg-primary/10 border border-primary/20 rounded px-2.5 py-1 text-primary text-xs font-bold uppercase tracking-wider mb-3 w-fit">
-                      <span className="material-symbols-outlined text-xs">stars</span>
+                    <span className="inline-flex items-center gap-1.5 bg-gradient-to-r from-amber-500/90 to-amber-600/90 text-white rounded-full px-3.5 py-1.5 text-xs font-bold uppercase tracking-wider mb-4 shadow-sm border border-amber-400/30 w-fit">
+                      <span className="material-symbols-outlined text-sm animate-pulse text-amber-100">military_tech</span>
                       {proj.subtitle}
                     </span>
                     <h4 className="font-headline-md text-2xl text-on-surface mb-3">{proj.title}</h4>
                     <p className="text-on-surface-variant text-sm mb-4 leading-relaxed">{proj.desc}</p>
                   </div>
-                  <a className="text-primary font-label-md hover:underline flex items-center gap-1 mt-2" href="#contact">
+                  <a className="inline-flex items-center gap-2 bg-primary text-on-primary font-label-md text-label-md px-6 py-2.5 rounded-full hover:bg-primary/90 transition-colors shadow-md hover:shadow-lg mt-4 w-fit" href="#contact">
                     {proj.linkText} <span className="material-symbols-outlined text-sm">arrow_forward</span>
                   </a>
                 </div>
@@ -55,7 +55,7 @@ const Projects = () => {
 
         {/* Event Operations Gallery */}
         <div>
-          <h3 className="font-headline-md text-2xl text-on-surface mb-8">Event Operations & Highlights Gallery</h3>
+          <h3 className="font-headline-md text-2xl text-on-surface mb-8">Event & Organization Projects</h3>
           <p className="font-body-md text-on-surface-variant mb-12 max-w-3xl">
             A visual documentation of actual large-scale events I have organized, directed, and managed, capturing key stages, crew coordinations, and memorable live production highlights.
           </p>
