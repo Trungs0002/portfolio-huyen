@@ -70,11 +70,11 @@ const Experience = () => {
         "Major in International Business Administration. Active student leader serving as Deputy Youth Union Secretary and MC & Fashion Club President.",
     },
     {
-      degree: "High School Diploma",
+      degree: "Russian-specialized Class, Cohort 49",
       school: "Phan Boi Chau High School for the Gifted, Nghe An",
       duration: "2020 - 2023",
       description:
-        "Student of the Russian-specialized Class, Cohort 49. One of the most prestigious gifted high schools in Vietnam.",
+        "Active student with experience in event organization and program content development. One of the most prestigious gifted high schools in Vietnam.",
     },
   ];
 
@@ -96,9 +96,8 @@ const Experience = () => {
               {experiences.map((exp, idx) => (
                 <div key={idx} className="relative">
                   <div
-                    className={`absolute -left-[35px] top-1 w-4 h-4 rounded-full ring-4 ring-surface-container-low ${
-                      idx === 0 ? "bg-primary" : "bg-surface-variant border-2 border-primary"
-                    }`}
+                    className={`absolute -left-[35px] top-1 w-4 h-4 rounded-full ring-4 ring-surface-container-low ${idx === 0 ? "bg-primary" : "bg-surface-variant border-2 border-primary"
+                      }`}
                   ></div>
                   <h4 className="font-headline-md text-xl text-on-surface">{exp.title}</h4>
                   <p className="text-primary font-label-md mb-2">
@@ -130,9 +129,8 @@ const Experience = () => {
               {education.map((edu, idx) => (
                 <div key={idx} className="relative">
                   <div
-                    className={`absolute -left-[35px] top-1 w-4 h-4 rounded-full ring-4 ring-surface-container-low ${
-                      idx === 0 ? "bg-primary" : "bg-surface-variant border-2 border-primary"
-                    }`}
+                    className={`absolute -left-[35px] top-1 w-4 h-4 rounded-full ring-4 ring-surface-container-low ${idx === 0 ? "bg-primary" : "bg-surface-variant border-2 border-primary"
+                      }`}
                   ></div>
                   <h4 className="font-headline-md text-xl text-on-surface">{edu.degree}</h4>
                   <p className="text-primary font-label-md mb-2">
