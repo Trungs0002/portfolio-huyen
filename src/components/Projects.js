@@ -90,7 +90,7 @@ const Projects = () => {
             <div className="reveal-on-scroll">
               <div className="border-l-4 border-primary pl-4 mb-6">
                 <h4 className="font-headline-md text-xl md:text-2xl text-on-surface">FTU Fashion Show 2024: "Phan Tam"</h4>
-                <p className="text-on-surface-variant text-sm font-label-md">Organizing Committee & Front-of-House Lead</p>
+                <p className="text-on-surface-variant text-sm font-label-md">Organizing Committee & OutSite Leader</p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
                 <div className="md:col-span-4 aspect-[3/4] overflow-hidden rounded-lg hover-card">
@@ -114,7 +114,7 @@ const Projects = () => {
             <div className="reveal-on-scroll" style={{ transitionDelay: "0.1s" }}>
               <div className="border-l-4 border-primary pl-4 mb-6">
                 <h4 className="font-headline-md text-xl md:text-2xl text-on-surface">MC FIRE 2025: Van Hoa Thoi So</h4>
-                <p className="text-on-surface-variant text-sm font-label-md">Head Organizer — Presenter Search Competition</p>
+                <p className="text-on-surface-variant text-sm font-label-md">Head Organizer</p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
                 <div className="md:col-span-8 aspect-[16/9] md:aspect-auto overflow-hidden rounded-lg hover-card order-2 md:order-1">
@@ -138,7 +138,7 @@ const Projects = () => {
             <div className="reveal-on-scroll" style={{ transitionDelay: "0.2s" }}>
               <div className="border-l-4 border-primary pl-4 mb-6">
                 <h4 className="font-headline-md text-xl md:text-2xl text-on-surface">Russian Gala 2022: Fantajor</h4>
-                <p className="text-on-surface-variant text-sm font-label-md">Head of Content — Theme, Flow & Stage Performance Coordination</p>
+                <p className="text-on-surface-variant text-sm font-label-md">Head of Content</p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
                 <div className="md:col-span-4 aspect-[3/4] overflow-hidden rounded-lg hover-card">
