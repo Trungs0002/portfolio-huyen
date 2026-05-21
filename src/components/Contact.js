@@ -55,12 +55,30 @@ const Contact = () => {
               </div>
               <div className="flex items-center gap-4 text-on-surface">
                 <span className="material-symbols-outlined text-primary">language</span>
-                <div className="flex gap-4 font-body-md">
-                  <a className="hover:text-primary transition-colors font-bold underline" href="#linkedin">
+                <div className="flex gap-4 font-body-md flex-wrap">
+                  <a
+                    className="hover:text-primary transition-colors font-bold underline"
+                    href="https://vn.linkedin.com/in/kh%C3%A1nh-huy%E1%BB%81n-nguy%E1%BB%85n-ng%E1%BB%8Dc-a1b361410"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     LinkedIn
                   </a>
-                  <a className="hover:text-primary transition-colors font-bold underline" href="#behance">
-                    Behance
+                  <a
+                    className="hover:text-primary transition-colors font-bold underline"
+                    href="https://web.facebook.com/kkh.uyen24"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Facebook
+                  </a>
+                  <a
+                    className="hover:text-primary transition-colors font-bold underline"
+                    href="https://www.instagram.com/kkh.uyen"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Instagram
                   </a>
                 </div>
               </div>
