@@ -3,14 +3,14 @@ import React from "react";
 const Projects = () => {
   const businessProjects = [
     {
-      image: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=800&q=80",
+      image: "/mcfire.jpg",
       title: "MC FIRE 2025",
       subtitle: "Head Organizer",
       desc: "Coordinated overall operations for the host/presenter talent search competition. Managed timelines, personnel allocation, and cross-department collaboration.",
       linkText: "View Event Details",
     },
     {
-      image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80",
+      image: "/ftufashionshow.jpg",
       title: "FTU Fashion Show 2024",
       subtitle: "Organizing Committee Member",
       desc: "Managed the front-of-house operations for 'Phân Tâm'. Coordinated VIP check-in, audience entry flow, and guest reception logistics.",
@@ -24,7 +24,7 @@ const Projects = () => {
       linkText: "Read Campaign Case",
     },
     {
-      image: "https://images.unsplash.com/photo-1460881680858-30d872d5b530?auto=format&fit=crop&w=800&q=80",
+      image: "/dahoinga.jpg",
       title: "Russian Gala 2022",
       subtitle: "Head of Content",
       desc: "Designed the artistic content blueprint, ensuring theme coherence across play scripts, musical sections, and logistical schedules.",
@@ -46,7 +46,7 @@ const Projects = () => {
           <h2 className="font-headline-lg text-headline-lg text-primary mb-6">Selected Projects & Highlights</h2>
           <div className="w-16 h-1 bg-primary mb-6"></div>
           <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-            A comprehensive overview of my leadership roles, event operations, and creative coordination, coupled with my visual fashion styling portfolio.
+            A comprehensive overview of my leadership roles, event operations, and creative coordination, coupled with real memories from key events.
           </p>
         </div>
 
@@ -56,7 +56,7 @@ const Projects = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {businessProjects.map((proj, idx) => (
               <div key={idx} className="bg-surface rounded-lg overflow-hidden hover-card reveal-on-scroll flex flex-col md:flex-row" style={{ transitionDelay: `${idx * 0.1}s` }}>
-                <div className="w-full md:w-1/3 overflow-hidden border-r border-outline-variant/30 relative">
+                <div className="w-full md:w-1/3 overflow-hidden border-r border-outline-variant/30 relative bg-surface-variant">
                   <img
                     alt={proj.title}
                     className="w-full h-full object-cover aspect-video md:aspect-[3/4] hover:scale-105 transition-transform duration-500"
@@ -78,58 +78,74 @@ const Projects = () => {
           </div>
         </div>
 
-        {/* Fashion Photography */}
+        {/* Event Operations Gallery */}
         <div>
-          <h3 className="font-headline-md text-2xl text-on-surface mb-8">Fashion Photography Portfolio</h3>
-          <p className="font-body-md text-on-surface-variant mb-8 max-w-3xl">
-            Beyond business strategy and large-scale operations, I express my creative vision through fashion photography and styling direction, focusing on geometric modern backgrounds and high-contrast styling layers.
+          <h3 className="font-headline-md text-2xl text-on-surface mb-8">Event Operations & Highlights Gallery</h3>
+          <p className="font-body-md text-on-surface-variant mb-12 max-w-3xl">
+            A visual documentation of actual large-scale events I have organized, directed, and managed, capturing key stages, crew coordinations, and memorable live production highlights.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter">
-            {/* Left Featured Vertical */}
-            <div className="md:col-span-5 reveal-on-scroll" style={{ transitionDelay: "0.1s" }}>
-              <div className="space-y-4">
-                <div className="aspect-[3/4] overflow-hidden rounded-lg hover-card">
+
+          <div className="space-y-16">
+            {/* FTU Fashion Show */}
+            <div className="reveal-on-scroll">
+              <div className="border-l-4 border-primary pl-4 mb-6">
+                <h4 className="font-headline-md text-xl md:text-2xl text-on-surface">FTU Fashion Show 2024: “Phân Tâm”</h4>
+                <p className="text-on-surface-variant text-sm font-label-md">Organizing Committee & Front-of-House Lead</p>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+                <div className="md:col-span-4 aspect-[3/4] overflow-hidden rounded-lg hover-card">
                   <img
-                    alt="Editorial Series: Minimalist Modernism"
+                    alt="FTU Fashion Show Highlights"
                     className="w-full h-full object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_Mi_chpHp64ZWELQyHJx92hoxxTjY1D76PryZ4aUAgNa9uSn9QbsZOr1nFHszCu63iGBkQh2Ws_NpeN8oQSE0odIhz5Ovo-WRqcBpyBrMkONgqzFsHjcnYY7_Rk1hj8izhMQf6FJzIJYHb0MsknLxPNDzqYuSyTPQPKl0JN64tEd0gYhXdiVuO09bTiMwilk8BwyRJAHoARmVE9lVHNRTji19kxZ4KiK5PcxpUM-CzICYlB4uf1xDVv__40CDr6jbyaWQdbT1O1I"
+                    src="/ftufashionshowrieng.jpg"
                   />
                 </div>
-                <div className="border-l-2 border-primary pl-4 py-1">
-                  <p className="font-headline-md text-sm md:text-base italic text-on-surface-variant">Editorial Series: Minimalist Modernism</p>
+                <div className="md:col-span-8 aspect-[16/9] md:aspect-auto overflow-hidden rounded-lg hover-card">
+                  <img
+                    alt="FTU Fashion Show Catwalk"
+                    className="w-full h-full object-cover"
+                    src="/ftufashionshow.jpg"
+                  />
                 </div>
               </div>
             </div>
-            {/* Right Grid */}
-            <div className="md:col-span-7 flex flex-col gap-gutter">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter">
-                {/* Detail Shot */}
-                <div className="reveal-on-scroll space-y-4" style={{ transitionDelay: "0.2s" }}>
-                  <div className="aspect-square overflow-hidden rounded-lg hover-card">
-                    <img
-                      alt="Texture & Detail: The Luxury of Craft"
-                      className="w-full h-full object-cover"
-                      src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4n4xlnf0dzk4fqWFIqpXMV_T4l17akWHubSrUS6ppypj19noThIoC8YCSGSqzgLMlyCMISzhHx7jTn0CzTsZVgaaQ5tY0wlK3J9aCh1qwEYLIiEtenXuHnktBXjKt-gAGhkzWr_sLYyhXQUzuBNdbqS6TpoSGZ61w2BBFG_ZtshR-KOZ7V2T81jsKusnx6zqFvuPe-wWCviA3A4flbFl2Eqf1Pruir6MMfFRUSrLyPWP5XUGZolb8b5lTDrRNdNuVE2gQ77mqubU"
-                    />
-                  </div>
-                  <div className="border-l-2 border-primary pl-4 py-1">
-                    <p className="font-headline-md text-sm italic text-on-surface-variant">Texture & Detail: The Luxury of Craft</p>
-                  </div>
-                </div>
-                <div className="hidden md:block"></div>
+
+            {/* MC FIRE */}
+            <div className="reveal-on-scroll" style={{ transitionDelay: "0.1s" }}>
+              <div className="border-l-4 border-primary pl-4 mb-6">
+                <h4 className="font-headline-md text-xl md:text-2xl text-on-surface">MC FIRE 2025</h4>
+                <p className="text-on-surface-variant text-sm font-label-md">Head Organizer — Presenter Search Competition</p>
               </div>
-              {/* Horizontal lifestyle shot */}
-              <div className="reveal-on-scroll space-y-4" style={{ transitionDelay: "0.3s" }}>
-                <div className="aspect-[16/9] overflow-hidden rounded-lg hover-card">
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+                <div className="md:col-span-8 aspect-[16/9] md:aspect-auto overflow-hidden rounded-lg hover-card order-2 md:order-1">
                   <img
-                    alt="Urban Elegance: Architectural Intersections"
+                    alt="MC FIRE Stage"
                     className="w-full h-full object-cover"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6Chwu34KLi_aqFLY2gI62P9Z4CPY9_AVdL32c6PuhuZYpyjZsaCy4u_s-qkksOkT5ZYNfBf6coTZjOXRAcQupM3-DbYV5Zdqp8mtypdZWTJ5YMPbAOHVaVsEOnG6QVCd_HTXqGzakuy3YTu3uYRXMyfhucpUOZuGt4R5kPaEQAvhda_9RQ6iJz-sUV35zmaIVJVTrbZtQJZhgHuLBhpsg_0UMw6m4Is37YxZd0c0hAzW9CFDyi_IfoHsxxtvyzTYQruYp0dbVJCM"
+                    src="/mcfire.jpg"
                   />
                 </div>
-                <div className="border-l-2 border-primary pl-4 py-1">
-                  <p className="font-headline-md text-sm italic text-on-surface-variant">Urban Elegance: Architectural Intersections</p>
+                <div className="md:col-span-4 aspect-[3/4] overflow-hidden rounded-lg hover-card order-1 md:order-2">
+                  <img
+                    alt="MC FIRE Head Organizer"
+                    className="w-full h-full object-cover"
+                    src="/mcfirerieng.jpg"
+                  />
                 </div>
+              </div>
+            </div>
+
+            {/* Dạ Hội Nga / Russian Gala */}
+            <div className="reveal-on-scroll" style={{ transitionDelay: "0.2s" }}>
+              <div className="border-l-4 border-primary pl-4 mb-6">
+                <h4 className="font-headline-md text-xl md:text-2xl text-on-surface">Dạ Hội Nga (Russian Gala 2022)</h4>
+                <p className="text-on-surface-variant text-sm font-label-md">Head of Content — Theme, Flow & Stage Performance Coordination</p>
+              </div>
+              <div className="aspect-[16/9] md:aspect-[21/9] overflow-hidden rounded-lg hover-card">
+                <img
+                  alt="Dạ Hội Nga Stage Performance"
+                  className="w-full h-full object-cover"
+                  src="/dahoinga.jpg"
+                />
               </div>
             </div>
           </div>
