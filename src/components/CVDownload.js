@@ -10,13 +10,11 @@ const CVDownload = () => {
         </p>
         <a
           className="inline-block bg-surface text-primary font-label-md text-label-md px-10 py-4 rounded-full hover:bg-surface-variant transition-colors ambient-shadow text-lg font-bold"
-          href="#download-cv"
-          onClick={(e) => {
-            e.preventDefault();
-            alert("Curriculum Vitae (PDF) download started!");
-          }}
+          href="https://drive.google.com/file/d/1NO2jCDPNrPv14vYPguJZZZxHUPGioAbC/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Download Full CV (PDF)
+          Download Full CV [PDF, Google Drive]
         </a>
       </div>
     </section>
