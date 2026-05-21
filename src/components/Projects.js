@@ -3,7 +3,7 @@ import React from "react";
 const Projects = () => {
   const businessProjects = [
     {
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+      image: "/loom.png",
       title: "Loom Sustainable Startup Project",
       subtitle: "Top 15 I-Impact Competition 2026",
       desc: "Developed a sustainable development initiative that excelled in the prestigious social impact competition. Led business model refinement, social value framework, and structured partner Pitching strategies.",
