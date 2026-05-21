@@ -65,8 +65,9 @@ const Experience = () => {
       degree: "Bachelor of International Business Administration",
       school: "Foreign Trade University, Hanoi",
       duration: "2023 - Present",
+      gpa: "3.57",
       description:
-        "Major in International Business Administration. Cumulative GPA: 3.57. Active student leader serving as Deputy Youth Union Secretary and MC & Fashion Club President.",
+        "Major in International Business Administration. Active student leader serving as Deputy Youth Union Secretary and MC & Fashion Club President.",
     },
     {
       degree: "High School Diploma",
@@ -127,7 +128,13 @@ const Experience = () => {
                   <p className="text-primary font-label-md mb-2">
                     {edu.school} | {edu.duration}
                   </p>
-                  <p className="text-on-surface-variant font-body-md leading-relaxed">{edu.description}</p>
+                  <p className="text-on-surface-variant font-body-md leading-relaxed mb-3">{edu.description}</p>
+                  {edu.gpa && (
+                    <div className="inline-flex items-center gap-1.5 bg-primary/10 border border-primary/20 rounded px-2.5 py-1 text-primary font-label-md font-semibold">
+                      <span className="material-symbols-outlined text-sm">stars</span>
+                      Cumulative GPA: {edu.gpa} / 4.00
+                    </div>
+                  )}
                 </div>
               ))}
             </div>

@@ -38,14 +38,18 @@ const About = () => {
               Currently acting as the President of the MC and Fashion Club (FTU) and the Deputy Youth Union Secretary, I thrive in managing cross-functional teams, planning comprehensive timelines, building active partner relations, and translating conceptual ideas into flawless event operations.
             </p>
             {/* Quick Details Box */}
-            <div className="bg-secondary-container/50 rounded-lg p-6 border border-primary/10 grid grid-cols-2 gap-4">
+            <div className="bg-secondary-container/50 rounded-lg p-6 border border-primary/10 grid grid-cols-1 sm:grid-cols-3 gap-6 items-center">
               <div>
                 <span className="text-xs text-primary font-bold uppercase tracking-wider block mb-1">Date of Birth</span>
-                <span className="text-on-surface font-body-md">24 September 2005</span>
+                <span className="text-on-surface font-body-md font-semibold">24 Sept 2005</span>
               </div>
               <div>
                 <span className="text-xs text-primary font-bold uppercase tracking-wider block mb-1">Location</span>
-                <span className="text-on-surface font-body-md">Lang Thuong, Hanoi</span>
+                <span className="text-on-surface font-body-md font-semibold">Hanoi, Vietnam</span>
+              </div>
+              <div className="bg-primary/10 rounded-lg p-3 border border-primary/20 flex flex-col justify-center items-center">
+                <span className="text-[10px] text-primary font-bold uppercase tracking-wider block text-center mb-0.5">Cumulative GPA</span>
+                <span className="text-primary font-headline-md text-xl font-bold">3.57 / 4.00</span>
               </div>
             </div>
           </div>
