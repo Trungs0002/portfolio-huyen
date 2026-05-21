@@ -3,39 +3,11 @@ import React from "react";
 const Projects = () => {
   const businessProjects = [
     {
-      image: "/mcfire.jpg",
-      title: "MC FIRE 2025: Van Hoa Thoi So",
-      subtitle: "Head Organizer",
-      desc: "Coordinated overall operations for the host/presenter talent search competition. Managed timelines, personnel allocation, and cross-department collaboration.",
-      linkText: "View Event Details",
-    },
-    {
-      image: "/ftufashionshow.jpg",
-      title: "FTU Fashion Show 2024: Phan Tam",
-      subtitle: "Organizing Committee Member",
-      desc: "Managed the front-of-house operations for 'Phan Tam'. Coordinated VIP check-in, audience entry flow, and guest reception logistics.",
-      linkText: "View Album",
-    },
-    {
-      image: "https://images.unsplash.com/photo-1521791136368-1a86827076b2?auto=format&fit=crop&w=800&q=80",
-      title: "LynkiD Partner Drive",
-      subtitle: "Business Development Support",
-      desc: "Identified retail prospects, managed contract compliance, voucher data verification, and facilitated the digital onboarding of premium partners.",
-      linkText: "Read Campaign Case",
-    },
-    {
-      image: "/dahoinga.jpg",
-      title: "Russian Gala 2022: Fantajor",
-      subtitle: "Head of Content",
-      desc: "Designed the artistic content blueprint, ensuring theme coherence across play scripts, musical sections, and logistical schedules.",
-      linkText: "Explore Content Blueprint",
-    },
-    {
-      image: "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80",
-      title: "DIAS Fashion Club",
-      subtitle: "Co-founder",
-      desc: "Co-founded the club at Phan Boi Chau High School. Built visual branding, foundational concepts, and directed initial stage member collaborations.",
-      linkText: "View Brand Identity",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+      title: "Loom Sustainable Startup Project",
+      subtitle: "Top 15 I-Impact Competition 2026",
+      desc: "Developed a sustainable development initiative that excelled in the prestigious social impact competition. Led business model refinement, social value framework, and structured partner Pitching strategies.",
+      linkText: "Explore Competition Details",
     },
   ];
 
@@ -52,21 +24,24 @@ const Projects = () => {
 
         {/* Business & Event Projects */}
         <div className="mb-20">
-          <h3 className="font-headline-md text-2xl text-on-surface mb-8">Event Management & Business Development</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <h3 className="font-headline-md text-2xl text-on-surface mb-8">Featured Business Case</h3>
+          <div className="grid grid-cols-1 gap-8">
             {businessProjects.map((proj, idx) => (
-              <div key={idx} className="bg-surface rounded-lg overflow-hidden hover-card reveal-on-scroll flex flex-col md:flex-row" style={{ transitionDelay: `${idx * 0.1}s` }}>
-                <div className="w-full md:w-1/3 overflow-hidden border-r border-outline-variant/30 relative bg-surface-variant">
+              <div key={idx} className="bg-surface rounded-lg overflow-hidden hover-card reveal-on-scroll flex flex-col md:flex-row max-w-4xl mx-auto" style={{ transitionDelay: `${idx * 0.1}s` }}>
+                <div className="w-full md:w-2/5 overflow-hidden border-r border-outline-variant/30 relative bg-surface-variant">
                   <img
                     alt={proj.title}
-                    className="w-full h-full object-cover aspect-video md:aspect-[3/4] hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover aspect-video md:aspect-[4/3] hover:scale-105 transition-transform duration-500"
                     src={proj.image}
                   />
                 </div>
-                <div className="p-6 flex-1 flex flex-col justify-between">
+                <div className="p-8 flex-1 flex flex-col justify-between">
                   <div>
-                    <span className="text-xs text-primary font-bold uppercase tracking-wider block mb-1">{proj.subtitle}</span>
-                    <h4 className="font-headline-md text-xl text-on-surface mb-2">{proj.title}</h4>
+                    <span className="inline-flex items-center gap-1.5 bg-primary/10 border border-primary/20 rounded px-2.5 py-1 text-primary text-xs font-bold uppercase tracking-wider mb-3 w-fit">
+                      <span className="material-symbols-outlined text-xs">stars</span>
+                      {proj.subtitle}
+                    </span>
+                    <h4 className="font-headline-md text-2xl text-on-surface mb-3">{proj.title}</h4>
                     <p className="text-on-surface-variant text-sm mb-4 leading-relaxed">{proj.desc}</p>
                   </div>
                   <a className="text-primary font-label-md hover:underline flex items-center gap-1 mt-2" href="#contact">
