@@ -32,10 +32,10 @@ const Experience = () => {
     },
     {
       title: "Head Organizer",
-      company: "MC FIRE 2025",
+      company: "MC FIRE 2025: Van Hoa Thoi So",
       duration: "05/2025",
       description:
-        "Coordinated the overall operation of MC FIRE 2025, a competition seeking talented hosts and presenters. Built the timeline, allocated personnel, coordinated departments, and supervised the event operation process.",
+        "Coordinated the overall operation of MC FIRE 2025: Van Hoa Thoi So, a competition seeking talented hosts and presenters. Built the timeline, allocated personnel, coordinated departments, and supervised the event operation process.",
     },
     {
       title: "Organizing Committee Member",
@@ -46,14 +46,14 @@ const Experience = () => {
     },
     {
       title: "Head of Content",
-      company: "Russian Gala 2022",
+      company: "Russian Gala 2022: Fantajor",
       duration: "08/2022 - 12/2022",
       description:
         "Developed the overall content direction for the program, ensuring consistency in theme, message, and flow. Generated ideas, developed program content, and worked with other departments to turn concepts into practical event components.",
     },
     {
-      title: "Co-founder of DIAS Fashion Club",
-      company: "Phan Boi Chau High School for the Gifted",
+      title: "Co-founder",
+      company: "DIAS Fashion Club",
       duration: "03/2021",
       description:
         "Participated in developing the initial idea and strategic direction for the club. Built the club’s concept, visual identity, and foundational activities. Coordinated early-stage operations including task allocation, member connection, and internal activity implementation.",

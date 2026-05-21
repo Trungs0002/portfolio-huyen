@@ -4,16 +4,16 @@ const Projects = () => {
   const businessProjects = [
     {
       image: "/mcfire.jpg",
-      title: "MC FIRE 2025",
+      title: "MC FIRE 2025: Van Hoa Thoi So",
       subtitle: "Head Organizer",
       desc: "Coordinated overall operations for the host/presenter talent search competition. Managed timelines, personnel allocation, and cross-department collaboration.",
       linkText: "View Event Details",
     },
     {
       image: "/ftufashionshow.jpg",
-      title: "FTU Fashion Show 2024",
+      title: "FTU Fashion Show 2024: Phan Tam",
       subtitle: "Organizing Committee Member",
-      desc: "Managed the front-of-house operations for 'Phân Tâm'. Coordinated VIP check-in, audience entry flow, and guest reception logistics.",
+      desc: "Managed the front-of-house operations for 'Phan Tam'. Coordinated VIP check-in, audience entry flow, and guest reception logistics.",
       linkText: "View Album",
     },
     {
@@ -25,7 +25,7 @@ const Projects = () => {
     },
     {
       image: "/dahoinga.jpg",
-      title: "Russian Gala 2022",
+      title: "Russian Gala 2022: Fantajor",
       subtitle: "Head of Content",
       desc: "Designed the artistic content blueprint, ensuring theme coherence across play scripts, musical sections, and logistical schedules.",
       linkText: "Explore Content Blueprint",
@@ -113,7 +113,7 @@ const Projects = () => {
             {/* MC FIRE */}
             <div className="reveal-on-scroll" style={{ transitionDelay: "0.1s" }}>
               <div className="border-l-4 border-primary pl-4 mb-6">
-                <h4 className="font-headline-md text-xl md:text-2xl text-on-surface">MC FIRE 2025</h4>
+                <h4 className="font-headline-md text-xl md:text-2xl text-on-surface">MC FIRE 2025: Van Hoa Thoi So</h4>
                 <p className="text-on-surface-variant text-sm font-label-md">Head Organizer — Presenter Search Competition</p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
@@ -137,7 +137,7 @@ const Projects = () => {
             {/* Dạ Hội Nga / Russian Gala */}
             <div className="reveal-on-scroll" style={{ transitionDelay: "0.2s" }}>
               <div className="border-l-4 border-primary pl-4 mb-6">
-                <h4 className="font-headline-md text-xl md:text-2xl text-on-surface">Russian Gala 2022: "Da Hoi Nga"</h4>
+                <h4 className="font-headline-md text-xl md:text-2xl text-on-surface">Russian Gala 2022: Fantajor</h4>
                 <p className="text-on-surface-variant text-sm font-label-md">Head of Content — Theme, Flow & Stage Performance Coordination</p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
