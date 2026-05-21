@@ -66,7 +66,7 @@ const Hero = () => {
             </h1>
             <div className="w-16 h-1 bg-primary mb-6"></div>
             <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
-              Business Development Intern at LynkiD | President of MC and Fashion Club | Deputy Youth Union Secretary at Foreign Trade University. Bridging the gap between corporate development and creative event operations.
+              Business Development Intern at LynkiD | President of MC and Fashion Club | Deputy Youth Union Secretary at Foreign Trade University | Co-founder of DIAS Fashion. Bridging the gap between corporate development and creative event operations.
             </p>
           </div>
           <div className="flex flex-wrap gap-4 pt-4">

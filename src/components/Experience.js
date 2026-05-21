@@ -51,6 +51,13 @@ const Experience = () => {
       description:
         "Developed the overall content direction for the program, ensuring consistency in theme, message, and flow. Generated ideas, developed program content, and worked with other departments to turn concepts into practical event components.",
     },
+    {
+      title: "Co-founder of DIAS Fashion Club",
+      company: "Phan Boi Chau High School for the Gifted",
+      duration: "03/2021",
+      description:
+        "Participated in developing the initial idea and strategic direction for the club. Built the club’s concept, visual identity, and foundational activities. Coordinated early-stage operations including task allocation, member connection, and internal activity implementation.",
+    },
   ];
 
   const education = [

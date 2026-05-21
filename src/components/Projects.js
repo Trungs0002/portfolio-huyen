@@ -30,6 +30,13 @@ const Projects = () => {
       desc: "Designed the artistic content blueprint, ensuring theme coherence across play scripts, musical sections, and logistical schedules.",
       linkText: "Explore Content Blueprint",
     },
+    {
+      image: "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80",
+      title: "DIAS Fashion Club",
+      subtitle: "Co-founder",
+      desc: "Co-founded the club at Phan Boi Chau High School. Built visual branding, foundational concepts, and directed initial stage member collaborations.",
+      linkText: "View Brand Identity",
+    },
   ];
 
   return (
