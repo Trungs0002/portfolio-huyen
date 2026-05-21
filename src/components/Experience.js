@@ -62,11 +62,11 @@ const Experience = () => {
 
   const education = [
     {
-      degree: "Bachelor of Business Administration",
+      degree: "Bachelor of International Business Administration",
       school: "Foreign Trade University, Hanoi",
       duration: "2023 - Present",
       description:
-        "Major in Business Administration. Cumulative GPA: 3.57. Active student leader serving as Deputy Youth Union Secretary and MC & Fashion Club President.",
+        "Major in International Business Administration. Cumulative GPA: 3.57. Active student leader serving as Deputy Youth Union Secretary and MC & Fashion Club President.",
     },
     {
       degree: "High School Diploma",

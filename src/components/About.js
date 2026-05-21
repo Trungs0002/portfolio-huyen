@@ -32,7 +32,7 @@ const About = () => {
             <h2 className="font-headline-lg text-headline-lg text-primary mb-6">About Me</h2>
             <div className="w-16 h-1 bg-primary mb-6"></div>
             <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-6">
-              I am Nguyen Ngoc Khanh Huyen, a dedicated student of Business Administration at Foreign Trade University (Hanoi) with a GPA of 3.57. My professional journey combines business development with a vibrant leadership presence in student organizations and large-scale event management.
+              I am Nguyen Ngoc Khanh Huyen, a dedicated student of International Business Administration at Foreign Trade University (Hanoi) with a GPA of 3.57. My professional journey combines business development with a vibrant leadership presence in student organizations and large-scale event management.
             </p>
             <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-6">
               Currently acting as the President of the MC and Fashion Club (FTU) and the Deputy Youth Union Secretary, I thrive in managing cross-functional teams, planning comprehensive timelines, building active partner relations, and translating conceptual ideas into flawless event operations.
