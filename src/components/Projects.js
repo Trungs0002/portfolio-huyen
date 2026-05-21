@@ -89,7 +89,7 @@ const Projects = () => {
             {/* FTU Fashion Show */}
             <div className="reveal-on-scroll">
               <div className="border-l-4 border-primary pl-4 mb-6">
-                <h4 className="font-headline-md text-xl md:text-2xl text-on-surface">FTU Fashion Show 2024: “Phân Tâm”</h4>
+                <h4 className="font-headline-md text-xl md:text-2xl text-on-surface">FTU Fashion Show 2024: "Phan Tam"</h4>
                 <p className="text-on-surface-variant text-sm font-label-md">Organizing Committee & Front-of-House Lead</p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
@@ -137,12 +137,12 @@ const Projects = () => {
             {/* Dạ Hội Nga / Russian Gala */}
             <div className="reveal-on-scroll" style={{ transitionDelay: "0.2s" }}>
               <div className="border-l-4 border-primary pl-4 mb-6">
-                <h4 className="font-headline-md text-xl md:text-2xl text-on-surface">Dạ Hội Nga (Russian Gala 2022)</h4>
+                <h4 className="font-headline-md text-xl md:text-2xl text-on-surface">Russian Gala 2022: "Da Hoi Nga"</h4>
                 <p className="text-on-surface-variant text-sm font-label-md">Head of Content — Theme, Flow & Stage Performance Coordination</p>
               </div>
               <div className="aspect-[16/9] md:aspect-[21/9] overflow-hidden rounded-lg hover-card">
                 <img
-                  alt="Dạ Hội Nga Stage Performance"
+                  alt="Russian Gala Stage Performance"
                   className="w-full h-full object-cover"
                   src="/dahoinga.jpg"
                 />

@@ -39,7 +39,7 @@ const Experience = () => {
     },
     {
       title: "Organizing Committee Member",
-      company: "FTU Fashion Show 2024: “Phân Tâm”",
+      company: "FTU Fashion Show 2024: 'Phan Tam'",
       duration: "08/2024",
       description:
         "Contributed to building the timeline, tracking progress, and coordinating the implementation of event components. Led the outside/front-of-house area, in charge of guest reception, check-in, guest guidance, and crowd flow coordination.",
