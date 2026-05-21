@@ -140,12 +140,21 @@ const Projects = () => {
                 <h4 className="font-headline-md text-xl md:text-2xl text-on-surface">Russian Gala 2022: "Da Hoi Nga"</h4>
                 <p className="text-on-surface-variant text-sm font-label-md">Head of Content — Theme, Flow & Stage Performance Coordination</p>
               </div>
-              <div className="aspect-[16/9] md:aspect-[21/9] overflow-hidden rounded-lg hover-card">
-                <img
-                  alt="Russian Gala Stage Performance"
-                  className="w-full h-full object-cover"
-                  src="/dahoinga.jpg"
-                />
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+                <div className="md:col-span-4 aspect-[3/4] overflow-hidden rounded-lg hover-card">
+                  <img
+                    alt="Russian Gala Portrait"
+                    className="w-full h-full object-cover"
+                    src="/dahoingarieng.jpg"
+                  />
+                </div>
+                <div className="md:col-span-8 aspect-[16/9] md:aspect-auto overflow-hidden rounded-lg hover-card">
+                  <img
+                    alt="Russian Gala Stage Performance"
+                    className="w-full h-full object-cover"
+                    src="/dahoinga.jpg"
+                  />
+                </div>
               </div>
             </div>
           </div>
