@@ -46,7 +46,7 @@ const Hero = () => {
       id="home"
     >
       {/* Abstract Shapes */}
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-bl from-surface/40 to-transparent pointer-events-none"></div>
+      <div className="absolute top-0 right-0 w-full h-full bg-gradient-to-bl from-primary/5 via-transparent to-transparent pointer-events-none"></div>
       <div
         ref={shape1Ref}
         className="absolute top-20 right-20 w-64 h-64 border border-primary/10 rounded-full blur-xl pointer-events-none transition-transform duration-100 ease-out"
