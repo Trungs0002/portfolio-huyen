@@ -103,7 +103,7 @@ const Experience = () => {
               {experiences.map((exp, idx) => (
                 <div key={idx} className="relative">
                   <div
-                    className={`absolute -left-[35px] top-1 w-4 h-4 rounded-full ring-4 ring-surface-container-low ${idx === 0 ? "bg-primary" : "bg-surface-variant border-2 border-primary"
+                    className={`absolute -left-[35px] top-1 w-4 h-4 rounded-full ring-4 ring-surface ${idx === 0 ? "bg-primary" : "bg-surface-variant border-2 border-primary"
                       }`}
                   ></div>
                   <h4 className="font-headline-md text-xl text-on-surface">{exp.title}</h4>
@@ -136,7 +136,7 @@ const Experience = () => {
               {education.map((edu, idx) => (
                 <div key={idx} className="relative">
                   <div
-                    className={`absolute -left-[35px] top-1 w-4 h-4 rounded-full ring-4 ring-surface-container-low ${idx === 0 ? "bg-primary" : "bg-surface-variant border-2 border-primary"
+                    className={`absolute -left-[35px] top-1 w-4 h-4 rounded-full ring-4 ring-surface ${idx === 0 ? "bg-primary" : "bg-surface-variant border-2 border-primary"
                       }`}
                   ></div>
                   <h4 className="font-headline-md text-xl text-on-surface">{edu.degree}</h4>
