@@ -33,11 +33,9 @@ const Contact = () => {
           <div>
             <h2 className="font-headline-lg text-headline-lg text-primary mb-4">Get in Touch</h2>
             <div className="w-16 h-1 bg-primary mb-6"></div>
-            <p className="font-body-lg text-body-lg text-on-surface-variant mb-8 leading-relaxed font-semibold">
-              Think better<br />
-              Build better<br />
-              Be better
-            </p>
+            {/* <p className="font-body-lg text-body-lg text-on-surface-variant mb-8">
+              Whether you have an opportunity, a collaboration proposal, or just want to say hello, feel free to reach out directly.
+            </p> */}
             <div className="space-y-4">
               <div className="flex items-center gap-4 text-on-surface">
                 <span className="material-symbols-outlined text-primary">mail</span>

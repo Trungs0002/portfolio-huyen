@@ -9,8 +9,15 @@ const Footer = () => {
 
   return (
     <footer className="w-full py-section-padding-mobile md:py-16 bg-surface-container border-t border-outline-variant/30 reveal-on-scroll">
-      <div className="flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto px-gutter gap-unit">
-        <span className="font-headline-md text-primary text-headline-md font-headline-md">NNKH</span>
+      <div className="flex flex-col md:flex-row justify-between items-center max-w-container-max mx-auto px-gutter gap-6 md:gap-8">
+        <div className="flex flex-col items-center md:items-start gap-1">
+          <span className="font-headline-md text-primary text-headline-md font-headline-md">NNKH</span>
+          <p className="font-headline-md text-[13px] text-[#8e706b] italic tracking-widest leading-relaxed text-center md:text-left mt-1">
+            Think better<br />
+            Build better<br />
+            Be better
+          </p>
+        </div>
         <p className="font-body-md text-body-md text-primary">
           © 2026 Nguyen Ngoc Khanh Huyen.
         </p>
