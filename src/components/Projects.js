@@ -8,7 +8,8 @@ const Projects = () => {
       image: "/loom.png",
       title: "Loom Sustainable Startup Project",
       subtitle: "Top 15 I-Impact Competition 2026",
-      desc: "Developed a sustainable development initiative that excelled in the prestigious social impact competition. Led business model refinement, social value framework, and structured partner Pitching strategies.",
+      desc: `LOOM is a sustainable fashion project focused on upcycled denim bags made from old jeans. The project explores product concept development, brand identity, visual storytelling, and online business potential.
+My role included developing the project idea, brand direction, product concept, visual identity, business model, and pitching materials.`,
       linkText: "Visit Loom Denim",
       href: "https://loomdenim.vercel.app/",
     },
@@ -18,7 +19,7 @@ const Projects = () => {
     <section className="section-block py-section-padding-mobile md:py-section-padding-desktop px-gutter bg-secondary-container" id="projects">
       <div className="max-w-container-max mx-auto">
         <div className="reveal-on-scroll mb-16 max-w-3xl">
-          <h2 className="font-headline-lg text-headline-lg text-primary mb-6">Selected Projects & Highlights</h2>
+          <h2 className="font-headline-lg text-headline-lg text-primary mb-6">Selected Projects & Portfolio</h2>
           <div className="w-16 h-1 bg-primary mb-6"></div>
           <p className="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
             A comprehensive overview of my leadership roles, event operations, and creative coordination, coupled with real memories from key events.
@@ -48,7 +49,7 @@ const Projects = () => {
                       {proj.subtitle}
                     </span>
                     <h4 className="font-headline-md text-2xl text-on-surface mb-3">{proj.title}</h4>
-                    <p className="text-on-surface-variant text-sm mb-4 leading-relaxed">{proj.desc}</p>
+                    <p className="text-on-surface-variant text-sm mb-4 leading-relaxed whitespace-pre-line">{proj.desc}</p>
                   </div>
                   <a
                     className="inline-flex items-center gap-2 bg-primary text-on-primary font-label-md text-label-md px-6 py-2.5 rounded-full hover:bg-primary/90 transition-colors shadow-md hover:shadow-lg mt-4 w-fit"
