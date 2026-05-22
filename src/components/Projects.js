@@ -77,7 +77,10 @@ My role included developing the project idea, brand direction, product concept, 
             <div className="reveal-on-scroll">
               <div className="border-l-4 border-primary pl-4 mb-6">
                 <h4 className="font-headline-md text-xl md:text-2xl text-on-surface">FTU Fashion Show 2024: "Phan Tam"</h4>
-                <p className="text-on-surface-variant text-sm font-label-md">Organizing Committee & OutSite Leader</p>
+                <p className="text-on-surface-variant text-sm font-label-md mb-3">Organizing Committee & OutSite Leader</p>
+                <p className="text-on-surface-variant text-sm max-w-4xl leading-relaxed mt-2">
+                  FTU Fashion Show 2024: “Phan Tam” is a student fashion show organized by FTU MC & Fashion Club, combining runway performance, stage production, and event operations. My role focused on outside-area coordination, including guest reception, check-in, and crowd flow management.
+                </p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
                 <div
@@ -107,7 +110,10 @@ My role included developing the project idea, brand direction, product concept, 
             <div className="reveal-on-scroll" style={{ transitionDelay: "0.1s" }}>
               <div className="border-l-4 border-primary pl-4 mb-6">
                 <h4 className="font-headline-md text-xl md:text-2xl text-on-surface">MC FIRE 2025: Van Hoa Thoi So</h4>
-                <p className="text-on-surface-variant text-sm font-label-md">Head Organizer</p>
+                <p className="text-on-surface-variant text-sm font-label-md mb-3">Head Organizer</p>
+                <p className="text-on-surface-variant text-sm max-w-4xl leading-relaxed mt-2">
+                  MC FIRE 2025 is a student MC competition organized by FTU MC & Fashion Club to discover and develop young hosting talents. The project reflects my experience in managing event planning, team coordination, and program operations.
+                </p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
                 <div
@@ -137,7 +143,10 @@ My role included developing the project idea, brand direction, product concept, 
             <div className="reveal-on-scroll" style={{ transitionDelay: "0.2s" }}>
               <div className="border-l-4 border-primary pl-4 mb-6">
                 <h4 className="font-headline-md text-xl md:text-2xl text-on-surface">Russian Gala 2022: Fantajor</h4>
-                <p className="text-on-surface-variant text-sm font-label-md">Head of Content</p>
+                <p className="text-on-surface-variant text-sm font-label-md mb-3">Head of Content</p>
+                <p className="text-on-surface-variant text-sm max-w-4xl leading-relaxed mt-2">
+                  Russian Gala 2022 is a cultural event built around a consistent program theme. My role focused on developing the content direction, program flow, and script framework for the event.
+                </p>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
                 <div
@@ -158,6 +167,39 @@ My role included developing the project idea, brand direction, product concept, 
                     alt="Russian Gala Stage Performance"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     src="/dahoinga.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Vì Tiếng Cười Trẻ Thơ 2021 */}
+            <div className="reveal-on-scroll" style={{ transitionDelay: "0.3s" }}>
+              <div className="border-l-4 border-primary pl-4 mb-6">
+                <h4 className="font-headline-md text-xl md:text-2xl text-on-surface">Vi Tieng Cuoi Tre Tho 2021</h4>
+                <p className="text-on-surface-variant text-sm font-label-md mb-3">Finance Committee</p>
+                <p className="text-on-surface-variant text-sm max-w-4xl leading-relaxed mt-2">
+                  Vi Tieng Cuoi Tre Tho 2021 is a volunteer project organized to support children at SOS Children’s Village through fundraising and community engagement activities. My role focused on contacting potential sponsors, communicating the project’s purpose, and supporting financial preparation for the event.
+                </p>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+                <div
+                  className="md:col-span-8 aspect-[16/9] md:aspect-auto overflow-hidden rounded-lg hover-card order-2 md:order-1 cursor-pointer"
+                  onClick={() => setActiveImage("/vitiengcuoitretho.jpg")}
+                >
+                  <img
+                    alt="Vì Tiếng Cười Trẻ Thơ Stage / Activities"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500 animate-fade-in"
+                    src="/vitiengcuoitretho.jpg"
+                  />
+                </div>
+                <div
+                  className="md:col-span-4 aspect-[3/4] overflow-hidden rounded-lg hover-card order-1 md:order-2 cursor-pointer"
+                  onClick={() => setActiveImage("/vitiengcuoitrethorieng.jpg")}
+                >
+                  <img
+                    alt="Vì Tiếng Cười Trẻ Thơ Portrait / Committee Member"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500 animate-fade-in"
+                    src="/vitiengcuoitrethorieng.jpg"
                   />
                 </div>
               </div>

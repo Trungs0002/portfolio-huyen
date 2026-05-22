@@ -58,6 +58,13 @@ const Experience = () => {
       description:
         "Participated in developing the initial idea and strategic direction for the club. Built the club’s concept, visual identity, and foundational activities. Coordinated early-stage operations including task allocation, member connection, and internal activity implementation.",
     },
+    {
+      title: "External Relations Committee Member",
+      company: "Vi Tieng Cuoi Tre Tho 2021",
+      duration: "01/2021",
+      description:
+        "Contacted and communicated with potential partners and sponsors to secure financial support for the volunteer project. Assisted in building project introduction content, conveying program objectives, and mobilizing resources for activities at the SOS Children's Village.",
+    },
   ];
 
   const education = [
