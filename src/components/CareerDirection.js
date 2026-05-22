@@ -23,7 +23,7 @@ const CareerDirection = () => {
   ];
 
   return (
-    <section className="section-block py-section-padding-mobile md:py-section-padding-desktop px-gutter bg-surface-container-low" id="career">
+    <section className="section-block py-section-padding-mobile md:py-section-padding-desktop px-gutter bg-secondary-container" id="career">
       <div className="max-w-container-max mx-auto reveal-on-scroll">
         <div className="text-center mb-16">
           <h2 className="font-headline-lg text-headline-lg text-primary mb-4">Career Direction</h2>
