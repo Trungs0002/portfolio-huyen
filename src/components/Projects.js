@@ -73,41 +73,8 @@ My role included developing the project idea, brand direction, product concept, 
           </p>
 
           <div className="space-y-16">
-            {/* FTU Fashion Show */}
-            <div className="reveal-on-scroll">
-              <div className="border-l-4 border-primary pl-4 mb-6">
-                <h4 className="font-headline-md text-xl md:text-2xl text-on-surface">FTU Fashion Show 2024: "Phan Tam"</h4>
-                <p className="text-on-surface-variant text-sm font-label-md mb-3">Organizing Committee & OutSite Leader</p>
-                <p className="text-on-surface-variant text-sm max-w-4xl leading-relaxed mt-2">
-                  FTU Fashion Show 2024: “Phan Tam” is a student fashion show organized by FTU MC & Fashion Club, combining runway performance, stage production, and event operations. My role focused on outside-area coordination, including guest reception, check-in, and crowd flow management.
-                </p>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-                <div
-                  className="md:col-span-4 aspect-[3/4] overflow-hidden rounded-lg hover-card cursor-pointer"
-                  onClick={() => setActiveImage("/ftufashionshowrieng.jpg")}
-                >
-                  <img
-                    alt="FTU Fashion Show Highlights"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                    src="/ftufashionshowrieng.jpg"
-                  />
-                </div>
-                <div
-                  className="md:col-span-8 aspect-[16/9] md:aspect-auto overflow-hidden rounded-lg hover-card cursor-pointer"
-                  onClick={() => setActiveImage("/ftufashionshow.jpg")}
-                >
-                  <img
-                    alt="FTU Fashion Show Catwalk"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                    src="/ftufashionshow.jpg"
-                  />
-                </div>
-              </div>
-            </div>
-
             {/* MC FIRE */}
-            <div className="reveal-on-scroll" style={{ transitionDelay: "0.1s" }}>
+            <div className="reveal-on-scroll">
               <div className="border-l-4 border-primary pl-4 mb-6">
                 <h4 className="font-headline-md text-xl md:text-2xl text-on-surface">MC FIRE 2025: Van Hoa Thoi So</h4>
                 <p className="text-on-surface-variant text-sm font-label-md mb-3">Head Organizer</p>
@@ -134,6 +101,39 @@ My role included developing the project idea, brand direction, product concept, 
                     alt="MC FIRE Head Organizer"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     src="/mcfirerieng.jpg"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* FTU Fashion Show */}
+            <div className="reveal-on-scroll" style={{ transitionDelay: "0.1s" }}>
+              <div className="border-l-4 border-primary pl-4 mb-6">
+                <h4 className="font-headline-md text-xl md:text-2xl text-on-surface">FTU Fashion Show 2024: "Phan Tam"</h4>
+                <p className="text-on-surface-variant text-sm font-label-md mb-3">Organizing Committee & OutSite Leader</p>
+                <p className="text-on-surface-variant text-sm max-w-4xl leading-relaxed mt-2">
+                  FTU Fashion Show 2024: “Phan Tam” is a student fashion show organized by FTU MC & Fashion Club, combining runway performance, stage production, and event operations. My role focused on outside-area coordination, including guest reception, check-in, and crowd flow management.
+                </p>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
+                <div
+                  className="md:col-span-4 aspect-[3/4] overflow-hidden rounded-lg hover-card cursor-pointer"
+                  onClick={() => setActiveImage("/ftufashionshowrieng.jpg")}
+                >
+                  <img
+                    alt="FTU Fashion Show Highlights"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    src="/ftufashionshowrieng.jpg"
+                  />
+                </div>
+                <div
+                  className="md:col-span-8 aspect-[16/9] md:aspect-auto overflow-hidden rounded-lg hover-card cursor-pointer"
+                  onClick={() => setActiveImage("/ftufashionshow.jpg")}
+                >
+                  <img
+                    alt="FTU Fashion Show Catwalk"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    src="/ftufashionshow.jpg"
                   />
                 </div>
               </div>
