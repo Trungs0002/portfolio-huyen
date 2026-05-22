@@ -53,8 +53,8 @@ function App() {
       <Experience />
       <Projects />
       <Skills />
-      <CVDownload />
       <PersonalBranding />
+      <CVDownload />
       <Contact />
       <Footer />
     </div>
