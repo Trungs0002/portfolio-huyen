@@ -84,23 +84,23 @@ My role included developing the project idea, brand direction, product concept, 
               </div>
               <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
                 <div
-                  className="md:col-span-8 aspect-[16/9] md:aspect-auto overflow-hidden rounded-lg hover-card order-2 md:order-1 cursor-pointer"
-                  onClick={() => setActiveImage("/mcfire.jpg")}
-                >
-                  <img
-                    alt="MC FIRE Stage"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                    src="/mcfire.jpg"
-                  />
-                </div>
-                <div
-                  className="md:col-span-4 aspect-[3/4] overflow-hidden rounded-lg hover-card order-1 md:order-2 cursor-pointer"
+                  className="md:col-span-4 aspect-[3/4] overflow-hidden rounded-lg hover-card cursor-pointer"
                   onClick={() => setActiveImage("/mcfirerieng.jpg")}
                 >
                   <img
                     alt="MC FIRE Head Organizer"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     src="/mcfirerieng.jpg"
+                  />
+                </div>
+                <div
+                  className="md:col-span-8 aspect-[16/9] md:aspect-auto overflow-hidden rounded-lg hover-card cursor-pointer"
+                  onClick={() => setActiveImage("/mcfire.jpg")}
+                >
+                  <img
+                    alt="MC FIRE Stage"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    src="/mcfire.jpg"
                   />
                 </div>
               </div>
@@ -117,23 +117,23 @@ My role included developing the project idea, brand direction, product concept, 
               </div>
               <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
                 <div
-                  className="md:col-span-4 aspect-[3/4] overflow-hidden rounded-lg hover-card cursor-pointer"
-                  onClick={() => setActiveImage("/ftufashionshowrieng.jpg")}
-                >
-                  <img
-                    alt="FTU Fashion Show Highlights"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                    src="/ftufashionshowrieng.jpg"
-                  />
-                </div>
-                <div
-                  className="md:col-span-8 aspect-[16/9] md:aspect-auto overflow-hidden rounded-lg hover-card cursor-pointer"
+                  className="md:col-span-8 aspect-[16/9] md:aspect-auto overflow-hidden rounded-lg hover-card order-2 md:order-1 cursor-pointer"
                   onClick={() => setActiveImage("/ftufashionshow.jpg")}
                 >
                   <img
                     alt="FTU Fashion Show Catwalk"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                     src="/ftufashionshow.jpg"
+                  />
+                </div>
+                <div
+                  className="md:col-span-4 aspect-[3/4] overflow-hidden rounded-lg hover-card order-1 md:order-2 cursor-pointer"
+                  onClick={() => setActiveImage("/ftufashionshowrieng.jpg")}
+                >
+                  <img
+                    alt="FTU Fashion Show Highlights"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    src="/ftufashionshowrieng.jpg"
                   />
                 </div>
               </div>
