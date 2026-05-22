@@ -26,14 +26,14 @@ const About = () => {
               My career interests include Business Development, Partnership, Event Management, and Brand/Project Coordination.
             </p>
             {/* Quick Details Box */}
-            <div className="bg-secondary-container/50 rounded-lg p-6 border border-primary/10 grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
-              <div>
-                <span className="text-xs text-primary font-bold uppercase tracking-wider block mb-1">Date of Birth</span>
-                <span className="text-on-surface font-body-md font-semibold">24 Sept 2005</span>
-              </div>
+            <div className="bg-secondary-container/50 rounded-lg p-6 border border-primary/10 grid grid-cols-1 sm:grid-cols-2 gap-6 items-start">
               <div>
                 <span className="text-xs text-primary font-bold uppercase tracking-wider block mb-1">Location</span>
                 <span className="text-on-surface font-body-md font-semibold">Hanoi, Vietnam</span>
+              </div>
+              <div>
+                <span className="text-xs text-primary font-bold uppercase tracking-wider block mb-1">Availability</span>
+                <span className="text-on-surface font-body-md font-semibold leading-relaxed">Open to internships, collaborations, and operations-related opportunities</span>
               </div>
             </div>
           </div>
