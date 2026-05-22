@@ -6,7 +6,7 @@ const Navbar = () => {
 
   const navLinks = [
     { label: "Home", href: "#home" },
-    { label: "About", href: "#about" },
+    { label: "About me", href: "#about" },
     { label: "Career", href: "#career" },
     { label: "Experience", href: "#experience" },
     { label: "Projects", href: "#projects" },
@@ -35,7 +35,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + (document.getElementById("navbar")?.offsetHeight || 0) + 100;
-      
+
       // Select sections
       const sections = document.querySelectorAll(".section-block");
       let currentSection = "home";
@@ -86,11 +86,10 @@ const Navbar = () => {
               return (
                 <li key={link.href}>
                   <a
-                    className={`nav-link font-label-md text-label-md transition-colors px-2 py-1 ${
-                      isActive
+                    className={`nav-link font-label-md text-label-md transition-colors px-2 py-1 ${isActive
                         ? "text-primary font-bold border-b-2 border-primary pb-1 rounded-none"
                         : "text-secondary hover:text-primary hover:bg-surface-variant/20 rounded-lg"
-                    }`}
+                      }`}
                     href={link.href}
                     onClick={(e) => handleScrollTo(e, link.href)}
                   >
@@ -130,9 +129,8 @@ const Navbar = () => {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-y-0 right-0 z-[60] w-64 bg-surface shadow-2xl transform transition-transform duration-300 ease-in-out md:hidden flex flex-col ${
-          isOpen ? "translate-x-0" : "translate-x-full"
-        }`}
+        className={`fixed inset-y-0 right-0 z-[60] w-64 bg-surface shadow-2xl transform transition-transform duration-300 ease-in-out md:hidden flex flex-col ${isOpen ? "translate-x-0" : "translate-x-full"
+          }`}
       >
         <div className="flex justify-end p-4">
           <button
@@ -149,11 +147,10 @@ const Navbar = () => {
             return (
               <li key={link.href}>
                 <a
-                  className={`mobile-nav-link font-label-md text-label-md transition-colors block ${
-                    isActive
+                  className={`mobile-nav-link font-label-md text-label-md transition-colors block ${isActive
                       ? "text-primary font-bold border-b-2 border-primary pb-1 rounded-none"
                       : "text-secondary hover:text-primary"
-                  }`}
+                    }`}
                   href={link.href}
                   onClick={(e) => handleScrollTo(e, link.href)}
                 >
@@ -176,9 +173,8 @@ const Navbar = () => {
 
       {/* Mobile Menu Backdrop */}
       <div
-        className={`fixed inset-0 z-50 bg-on-surface/20 backdrop-blur-sm transition-opacity duration-300 ease-in-out md:hidden ${
-          isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
-        }`}
+        className={`fixed inset-0 z-50 bg-on-surface/20 backdrop-blur-sm transition-opacity duration-300 ease-in-out md:hidden ${isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+          }`}
         onClick={() => setIsOpen(false)}
       ></div>
     </>
