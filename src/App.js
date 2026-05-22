@@ -7,6 +7,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import CareerDirection from "./components/CareerDirection";
 import CVDownload from "./components/CVDownload";
+import PersonalBranding from "./components/PersonalBranding";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
@@ -53,6 +54,7 @@ function App() {
       <Projects />
       <Skills />
       <CVDownload />
+      <PersonalBranding />
       <Contact />
       <Footer />
     </div>
