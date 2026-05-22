@@ -48,10 +48,10 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <CareerDirection />
       <Experience />
       <Projects />
       <Skills />
-      <CareerDirection />
       <CVDownload />
       <Contact />
       <Footer />

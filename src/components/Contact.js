@@ -40,7 +40,7 @@ const Contact = () => {
               <div className="flex items-center gap-4 text-on-surface">
                 <span className="material-symbols-outlined text-primary">mail</span>
                 <a className="hover:text-primary transition-colors font-body-md" href="mailto:kkkhanhhuyenek@gmail.com">
-                  kkkhanhhuyenek@gmail.com
+                  nnkhanhhuyen249@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-4 text-on-surface">

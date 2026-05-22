@@ -86,7 +86,7 @@ const Experience = () => {
   ];
 
   return (
-    <section className="section-block py-section-padding-mobile md:py-section-padding-desktop px-gutter bg-surface-container-low" id="experience">
+    <section className="section-block py-section-padding-mobile md:py-section-padding-desktop px-gutter bg-surface" id="experience">
       <div className="max-w-container-max mx-auto">
         <div className="text-center mb-16 reveal-on-scroll">
           <h2 className="font-headline-lg text-headline-lg text-primary mb-4">Experience & Activities</h2>
