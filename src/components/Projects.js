@@ -1,7 +1,43 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 const Projects = () => {
   const [activeImage, setActiveImage] = useState(null);
+  const [isExpanded, setIsExpanded] = useState(false);
+  const scrollContainerRef = useRef(null);
+
+  // eslint-disable-next-line
+  const handleScroll = () => {
+    if (!isExpanded && scrollContainerRef.current) {
+      if (scrollContainerRef.current.scrollLeft > 10) {
+        setIsExpanded(true);
+      }
+    }
+  };
+
+  const scroll = (direction) => {
+    if (!isExpanded && direction === "right") {
+      setIsExpanded(true);
+      setTimeout(() => {
+        if (scrollContainerRef.current) {
+          const cardWidth = scrollContainerRef.current.querySelector('.snap-start')?.clientWidth || 300;
+          scrollContainerRef.current.scrollTo({
+            left: cardWidth * 1.5,
+            behavior: "smooth",
+          });
+        }
+      }, 50);
+      return;
+    }
+
+    if (scrollContainerRef.current) {
+      const { scrollLeft, clientWidth } = scrollContainerRef.current;
+      const scrollAmount = clientWidth * 0.8;
+      scrollContainerRef.current.scrollTo({
+        left: direction === "left" ? scrollLeft - scrollAmount : scrollLeft + scrollAmount,
+        behavior: "smooth",
+      });
+    }
+  };
 
   const businessProjects = [
     {
@@ -265,43 +301,117 @@ My role included developing the project idea, brand direction, product concept, 
           </div>
         </div>
 
-        {/* Creative Projects Gallery */}
+        {/* Creative Projects Gallery (Swiper / Horizontal Scroll) */}
         <div className="mt-24 border-t border-primary/10 pt-20">
-          <h3 className="font-headline-md text-2xl text-on-surface mb-4">Creative Projects</h3>
-          <p className="font-body-md text-on-surface-variant mb-12 max-w-4xl leading-relaxed">
-            A selection of photoshoots and visual productions where I contributed to concept development, production planning, creative coordination, and on-set execution. This section reflects my experience in organizing image-based projects and translating creative ideas into visual outcomes.
-          </p>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            {creativeProjects.map((item, idx) => (
-              <div
-                key={idx}
-                className="group relative aspect-[3/2] overflow-hidden rounded-xl bg-surface-variant hover-card cursor-pointer shadow-md hover:shadow-2xl border border-primary/5 transition-all duration-500"
-                style={{ transitionDelay: `${idx * 0.05}s` }}
-                onClick={() => setActiveImage(item.image)}
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+            <div className="max-w-3xl">
+              <h3 className="font-headline-md text-2xl text-on-surface mb-4">Creative Projects</h3>
+              <p className="font-body-md text-on-surface-variant leading-relaxed">
+                A selection of photoshoots and visual productions where I contributed to concept development, production planning, creative coordination, and on-set execution. This section reflects my experience in organizing image-based projects and translating creative ideas into visual outcomes.
+              </p>
+            </div>
+            
+            {/* Swiper Controls */}
+            <div className="flex items-center gap-4 self-end md:self-auto">
+              <button
+                onClick={() => scroll("left")}
+                className="w-12 h-12 rounded-full border border-primary/20 bg-surface/50 hover:bg-primary hover:border-primary text-on-surface hover:text-white flex items-center justify-center transition-all duration-300 active:scale-95 shadow-sm hover:shadow-md"
+                aria-label="Previous photos"
               >
-                {/* Photo */}
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-108"
-                />
+                <span className="material-symbols-outlined font-bold">arrow_back</span>
+              </button>
+              <button
+                onClick={() => scroll("right")}
+                className="w-12 h-12 rounded-full border border-primary/20 bg-surface/50 hover:bg-primary hover:border-primary text-on-surface hover:text-white flex items-center justify-center transition-all duration-300 active:scale-95 shadow-sm hover:shadow-md"
+                aria-label="Next photos"
+              >
+                <span className="material-symbols-outlined font-bold">arrow_forward</span>
+              </button>
+            </div>
+          </div>
 
-                {/* Dark Hover Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
-                  <span className="material-symbols-outlined text-white/90 text-xl absolute top-4 right-4 bg-white/10 p-1.5 rounded-full backdrop-blur-sm transform translate-y-[-10px] group-hover:translate-y-0 transition-all duration-300">
-                    zoom_in
-                  </span>
-                  
-                  <h4 className="font-headline-md text-lg md:text-xl text-white font-bold leading-tight mb-1 transform translate-y-[10px] group-hover:translate-y-0 transition-transform duration-300 delay-75">
-                    {item.title}
-                  </h4>
-                  <p className="font-label-md text-xs text-primary-fixed-dim tracking-wider uppercase transform translate-y-[10px] group-hover:translate-y-0 transition-transform duration-300 delay-150">
-                    {item.role}
-                  </p>
-                </div>
-              </div>
-            ))}
+          {/* Horizontal Slider Container */}
+          <div className="relative">
+            <div
+              ref={scrollContainerRef}
+              onScroll={handleScroll}
+              className="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-8 px-2 cursor-grab active:cursor-grabbing no-scrollbar"
+            >
+              {creativeProjects.map((item, idx) => {
+                const isThirdCard = idx === 2;
+                const showOverlay = !isExpanded && isThirdCard;
+
+                if (showOverlay) {
+                  return (
+                    <div
+                      key={idx}
+                      className="flex-shrink-0 w-[80vw] sm:w-[55vw] md:w-[40vw] lg:w-[28vw] aspect-[3/2] snap-start relative overflow-hidden rounded-2xl bg-surface-variant hover-card cursor-pointer shadow-md hover:shadow-2xl border border-primary/5 transition-all duration-500 group"
+                      onClick={() => {
+                        setIsExpanded(true);
+                        setTimeout(() => {
+                          if (scrollContainerRef.current) {
+                            const cardWidth = scrollContainerRef.current.querySelector('.snap-start')?.clientWidth || 300;
+                            scrollContainerRef.current.scrollTo({
+                              left: cardWidth * 2,
+                              behavior: "smooth",
+                            });
+                          }
+                        }, 50);
+                      }}
+                    >
+                      {/* Blurred Background Image */}
+                      <img
+                        src={item.image}
+                        alt="More Photoshoots"
+                        className="w-full h-full object-cover filter blur-[3px] scale-105"
+                      />
+
+                      {/* Glassmorphism Expander Details */}
+                      <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px] flex flex-col items-start justify-center p-6 sm:p-8 md:p-10 text-left group-hover:bg-black/50 transition-colors duration-300">
+                        <span className="material-symbols-outlined text-white/90 text-3xl mb-2 animate-pulse">
+                          arrow_forward
+                        </span>
+                        <h4 className="font-headline-md text-5xl md:text-6xl text-white font-light tracking-widest font-serif leading-none">
+                          +8
+                        </h4>
+                        <p className="font-label-md text-xs md:text-sm text-white/90 uppercase tracking-widest mt-4 font-bold">
+                          Scroll
+                        </p>
+                        <p className="text-white/60 text-[10px] md:text-xs mt-1 font-light max-w-[120px] leading-tight">
+                          to view all
+                        </p>
+                      </div>
+                    </div>
+                  );
+                }
+
+                return (
+                  <div
+                    key={idx}
+                    className="flex-shrink-0 w-[80vw] sm:w-[55vw] md:w-[40vw] lg:w-[28vw] aspect-[3/2] snap-start relative overflow-hidden rounded-2xl bg-surface-variant hover-card cursor-pointer shadow-md hover:shadow-2xl border border-primary/5 transition-all duration-500 group"
+                    onClick={() => setActiveImage(item.image)}
+                  >
+                    {/* Photo */}
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-108"
+                    />
+
+                    {/* Dark Hover Overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+                      <span className="material-symbols-outlined text-white/90 text-xl absolute top-4 right-4 bg-white/10 p-1.5 rounded-full backdrop-blur-sm transform translate-y-[-10px] group-hover:translate-y-0 transition-all duration-300">
+                        zoom_in
+                      </span>
+                      
+                      <h4 className="font-headline-md text-lg md:text-xl text-white font-bold leading-tight transform translate-y-[10px] group-hover:translate-y-0 transition-transform duration-300 delay-75">
+                        {item.title}
+                      </h4>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
