@@ -15,6 +15,64 @@ My role included developing the project idea, brand direction, product concept, 
     },
   ];
 
+  const creativeProjects = [
+    {
+      image: "/1.hoamong.jpg",
+      title: "Hoa Mong",
+      role: "Concept & Styling",
+    },
+    {
+      image: "/2.ngayxuangayxua.jpg",
+      title: "Ngay Xua Ngay Xua",
+      role: "Visual Production",
+    },
+    {
+      image: "/3.ngansacthanhxuan.jpg",
+      title: "Ngan Sac Thanh Xuan",
+      role: "Creative Direction",
+    },
+    {
+      image: "/4.taitinh.jpg",
+      title: "Tai Tinh",
+      role: "Concept & Execution",
+    },
+    {
+      image: "/5.greencollection.jpg",
+      title: "Green Collection",
+      role: "Sustainable Production",
+    },
+    {
+      image: "/6.hihy.jpg",
+      title: "Hi Hy",
+      role: "Visual Coordination",
+    },
+    {
+      image: "/7.ngoclamkinhky.jpg",
+      title: "Ngoc Lam Kinh Ky",
+      role: "Traditional Concept Styling",
+    },
+    {
+      image: "/8.joyride.jpg",
+      title: "Joyride",
+      role: "Concept & Coordination",
+    },
+    {
+      image: "/9.vorong.jpg",
+      title: "Vo Rong",
+      role: "Creative Production",
+    },
+    {
+      image: "/10.hoaluandich.jpg",
+      title: "Hoa Luan Dich",
+      role: "Concept Planning",
+    },
+    {
+      image: "/11.colormony.jpg",
+      title: "Colormony",
+      role: "Creative Coordination",
+    },
+  ];
+
   return (
     <section className="section-block py-section-padding-mobile md:py-section-padding-desktop px-gutter bg-secondary-container" id="projects">
       <div className="max-w-container-max mx-auto">
@@ -204,6 +262,46 @@ My role included developing the project idea, brand direction, product concept, 
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Creative Projects Gallery */}
+        <div className="mt-24 border-t border-primary/10 pt-20">
+          <h3 className="font-headline-md text-2xl text-on-surface mb-4">Creative Projects</h3>
+          <p className="font-body-md text-on-surface-variant mb-12 max-w-4xl leading-relaxed">
+            A selection of photoshoots and visual productions where I contributed to concept development, production planning, creative coordination, and on-set execution. This section reflects my experience in organizing image-based projects and translating creative ideas into visual outcomes.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {creativeProjects.map((item, idx) => (
+              <div
+                key={idx}
+                className="group relative aspect-[3/2] overflow-hidden rounded-xl bg-surface-variant hover-card cursor-pointer shadow-md hover:shadow-2xl border border-primary/5 transition-all duration-500"
+                style={{ transitionDelay: `${idx * 0.05}s` }}
+                onClick={() => setActiveImage(item.image)}
+              >
+                {/* Photo */}
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-108"
+                />
+
+                {/* Dark Hover Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+                  <span className="material-symbols-outlined text-white/90 text-xl absolute top-4 right-4 bg-white/10 p-1.5 rounded-full backdrop-blur-sm transform translate-y-[-10px] group-hover:translate-y-0 transition-all duration-300">
+                    zoom_in
+                  </span>
+                  
+                  <h4 className="font-headline-md text-lg md:text-xl text-white font-bold leading-tight mb-1 transform translate-y-[10px] group-hover:translate-y-0 transition-transform duration-300 delay-75">
+                    {item.title}
+                  </h4>
+                  <p className="font-label-md text-xs text-primary-fixed-dim tracking-wider uppercase transform translate-y-[10px] group-hover:translate-y-0 transition-transform duration-300 delay-150">
+                    {item.role}
+                  </p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
