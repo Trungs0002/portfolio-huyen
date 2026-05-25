@@ -10,7 +10,7 @@ const CVDownload = () => {
         </p>
         <a
           className="inline-block bg-surface text-primary font-label-md text-label-md px-10 py-4 rounded-full hover:bg-surface-variant transition-colors ambient-shadow text-lg font-bold"
-          href="https://drive.google.com/file/d/1vgEwa26zNseilmh19j2O-LQwNEopD087/view?usp=sharing"
+          href="https://drive.google.com/file/d/1N0KhuNSBFYkKmtxM-htW9ZOtFTSoweFN/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >
